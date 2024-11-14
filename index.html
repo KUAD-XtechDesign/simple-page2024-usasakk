@@ -1,42 +1,179 @@
 <!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>sample CV</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kadainosaito</title>
 
-  <body>
-    <div class="wrapper">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/script.js"></script>
 
-      <!-- 画像 -->
-      <div id="card">
-        <img src="./images/card.jpg" alt="カード">
-      </div>
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+  />
 
-      <!-- 個人情報なので注意 -->
-      <div class="profile">
-        <h2 class="title">name</h2>
-        <h1 class="name">山田一郎</h1>
+</head>
+<body>
+  <div id="gnav" class="nav">
+    <ul>
+      <!-- <li class="logo">portfoliosite</li> -->
+      <li><a href="#top">top</a></li>
+      <li><a href="#food">food</a></li>
+     
+  </div>
 
-        <h2 class="title">history</h2>
-        <ul class="history_list">
-          <li><div class="year">2000</div><div class="txt">〇〇県生まれ</div></li>
-          <li><div class="year">20XX</div><div class="txt">高校卒業</div></li>
-          <li><div class="year">20XX</div><div class="txt">文章が2行に渡る場合うまく収まるかをテストするために長い文章を書いてみるなど</div></li>
-          <li><div class="year">現在</div><div>在学中</div></li>
-        </ul>
+  <a name="top"></a>
+  <main>
+    <img id="main">
 
-        <h2 class="title">link</h2>
-        <div>
-          好きなサイト：<a href="https://google.com" target="_blank">グーグル</a>
-        </div>
+    <nav>
+      <ul>
+        <li id="play">Play</li>
+        <li id="prev">&lt;</li>
+        <li id="next">&gt;</li>
+      </ul>
+    </nav>
 
-      </div>
+    <ul class="thumbnails"></ul>
+  </main>
 
+
+  <a name="food"></a>
+  <div class="wrapper grid">
+    <div class="img_wrap item big-box">
+      <img class="up op" src="img/t1.png" alt="">
+      <!-- <p></p> -->
     </div>
-  </body>
+    <div class="img_wrap item">
+      <img class="food up op" src="img/t2.png" alt="">
+      <!-- <p></p> -->
+    </div>
+    <div class="img_wrap item">
+      <img class="food up op" src="img/t3.png" alt="">
+      <!-- <p></p> -->
+    </div>
+    <div class="img_wrap item">
+      <img class="food up op" src="img/t4.png" alt="">
+      <!-- <p></p> -->
+    </div>
+    <div class="img_wrap item">
+      <img class="food up op" src="img/t5.png" alt="">
+      <!-- <p></p> -->
+    </div>
+    <div class="img_wrap item">
+      <img class="food up op" src="img/t6.png" alt="">
+      <!-- <p></p> -->
+    </div>
+    <!-- <div class="item">
+      <img src="img/t7.png" alt="">
+      <p></p>
+    </div> -->
+    <div class="img_wrap item">
+      <img class="food up op" src="img/t19.png" alt="">
+      <!-- <p></p> -->
+    </div>
+    <div class="img_wrap item">
+      <img class="food up op" src="img/t8.png" alt="">
+      <!-- <p></p> -->
+    </div>
+    <div class="img_wrap item">
+      <img class="food up op" src="img/t9.png" alt="">
+      <!-- <p></p> -->
+    </div>
+    <div class="img_wrap item">
+      <img class="food up op" src="img/t10.png" alt="">
+      <!-- <p></p> -->
+    </div>
+    <div class="img_wrap item">
+      <img class="food up op" src="img/t11.png" alt="">
+      <!-- <p></p> -->
+    </div>
+    <div class="img_wrap item">
+      <img class="food up op" src="img/t12.png" alt="">
+      <!-- <p></p> -->
+    </div>
+    <div class="img_wrap item">
+      <img class="food up op" src="img/t13.png" alt="">
+      <!-- <p></p> -->
+    </div>
+    <div class="img_wrap item">
+      <img class="food up op" src="img/t14.png" alt="">
+      <!-- <p></p> -->
+    </div>
+    <div class="img_wrap item">
+      <img class="food up op" src="img/t15.png" alt="">
+      <!-- <p></p> -->
+    </div>
+    <div class="img_wrap item">
+      <img class="food up op" src="img/t17.png" alt="">
+      <!-- <p></p> -->
+    </div>
+    <div class="img_wrap item">
+      <img class="food up op" src="img/t16.png" alt="">
+      <!-- <p></p> -->
+    </div>
+    <div class="img_wrap item">
+      <img class="food up op" src="img/t18.png" alt="">
+      <!-- <p></p> -->
+    </div>
 
+  </div>
+
+  <!-- Slider main container -->
+  <!-- <div class="swiper"> -->
+    <!-- Additional required wrapper -->
+    <!-- <div class="swiper-wrapper"> -->
+    <!-- Slides -->
+      <!-- <div class="swiper-slide"><img src="img/tori1.png" alt=""></div> -->
+      <!-- <div class="swiper-slide"><img src="img/tori3.png" alt=""></div> -->
+      <!-- <div class="swiper-slide"><img src="img/tori2.png" alt=""></div> -->
+      ...
+    <!-- </div> -->
+    <!-- If we need pagination -->
+    <!-- <div class="swiper-pagination"></div> -->
+
+    <!-- If we need navigation buttons -->
+    <!-- <div class="swiper-button-prev"></div> -->
+    <!-- <div class="swiper-button-next"></div> -->
+
+    <!-- If we need scrollbar -->
+    <!-- <div class="swiper-scrollbar"></div> -->
+  <!-- </div> -->
+
+  
+
+
+
+
+
+
+
+  <!-- <div id="home" class="big-bg wrapper">
+    <div class="home-content">
+      <h2 class="home-title">kadainosaito</h2>
+    </div>
+  </div>
+
+  <a href="profile"></a>
+  <div class="profile-content wrapper">
+    <h2>久保田珠璃 -kubotrajuli-</h2>
+    <p>
+      京都芸術大学在学中
+    </p>
+  </div> -->
+  
+  <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script type="module">
+    import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
+    const swiper = new Swiper(...)
+  </script> -->
+  <script>
+    var mySwiper = new Swiper ('.swiper-container', {
+    })
+  </script>
+  <script src="js/main.js"></script>
+  <!-- <script src="js/scroll.js"></script> -->
+</body>
 </html>
